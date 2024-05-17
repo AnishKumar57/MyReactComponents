@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #edeade;
+  --poppins: "Poppins", sans-serif;
+}
+.creditCard {
+  height: 300px;
+  width: 500px;
+  color: var(--white);
+  margin: 30px;
+  margin-left: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.cardInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(135deg, #0045c7, #ff3cfd);
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.chip {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  padding: 20px 10px;
+}
+.chip img {
+  width: 50px;
+  height: 40px;
+}
+
+.cardName {
+  height: 50px;
+  width: 80px;
+  border-radius: 20px;
+}
+.cardName img {
+  width: 100%;
+  height: 100%;
+}
+
+.cardNumber {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+}
+.cardNumber > h1 {
+  font-size: 2rem;
+  font-family: var(--poppins);
+}
+
+.cardDtl {
+  font-family: var(--poppins);
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.cardDtlTxt {
+  font-size: 14px;
+  font-family: var(--poppins);
+  color: var(--white);
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Truncate text with ellipsis if it overflows */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.map-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.bar {
+  background: #222;
+  margin-left: -30px;
+  margin-right: -30px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.cardRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-cvv {
+  margin-top: 20px;
+}
+.card-cvv div {
+  flex: 1;
+}
+.card-cvv img {
+  width: 100%;
+  display: block;
+}
+
+.card-cvv p {
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  margin-top: 15px;
+  padding: 4px;
+}
+
+.cardText p {
+  color: white;
+  font-size: 14px;
+  margin-top: -10px;
+  font-style: var(--poppins);
+}
+
+.cvvWidth {
+  width: 50px;
+  height: 40px;
+}
+
+.signature p {
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.cardInner.flipped,
+.back {
+  transform: rotateY(180deg);
+}
+

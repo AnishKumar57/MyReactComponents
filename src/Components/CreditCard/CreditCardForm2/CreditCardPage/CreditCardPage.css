@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.creditCardPage {
+  height: 800px;
+  width: 700px;
+  background: rgb(126, 190, 161);
+  background: linear-gradient(
+    135deg,
+    rgba(126, 190, 161, 1) 50%,
+    rgba(44, 81, 217, 1) 85%
+  );
+  border-radius: 20px;
+  margin: auto;
+  padding: 50px;
+  color: white;
+  margin-top: 50px;
+}
+
+.labelName {
+  color: black;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.labelName p select{
+  font-size: 1rem;
+  margin: 2px 0;
+  box-sizing: border-box;
+  border: 1px solid ;
+  border-radius: 10px;
+  background: none;
+  height: 40px;
+  appearance: none;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.labelName p select:focus{
+  outline:none;
+}
+
+.expDate {
+  color: black;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.expDate p select{
+  font-size: 1rem;
+  margin: 2px 0;
+  box-sizing: border-box;
+  border: 1px solid ;
+  border-radius: 10px;
+  background: none;
+  height: 40px;
+  appearance: none;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.expDate p select:focus{
+  outline:none;
+}
+
+.cvv {
+  color: black;
+  width: 50%;
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+  float: right;
+  padding-left: 20px;
+}
+
+.cvv p select{
+  font-size: 1rem;
+  margin: 2px 0;
+  box-sizing: border-box;
+  border: 1px solid ;
+  border-radius: 10px;
+  background: none;
+  height: 40px;
+  appearance: none;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.cvv p select:focus{
+  outline:none;
+}
+
+.inputBox {
+    width: 100%;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(32, 31, 31);
+    background: none;
+    height: 30px;
+  }
+.inputBox:focus{
+    outline:none
+}
+
+.payBtn {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+  width: 100px;
+  height: 40px;
+  background: rgb(8, 171, 225);
+  background: linear-gradient(
+    135deg,
+    rgb(8, 171, 225) 50%,
+    rgba(44, 81, 217, 1) 85%
+  );
+  border: none;
+  border-radius: 10px;
+  color: white;
+
+}
+
+.labelName p select{
+    font-size: 1rem;
+    margin: 2px 0;
+    box-sizing: border-box;
+    border: 1px solid ;
+    border-radius: 10px;
+    background: none;
+    height: 40px;
+    appearance: none;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.labelName p select:focus{
+    outline:none;
+}
